@@ -5,56 +5,7 @@ const Login = () => {
     const navigate = useNavigate();
     const [isChecking, setIsChecking] = useState(true);
 
-    useEffect(() => {import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-
-const Login = () => {
-    const navigate = useNavigate();
-    const [isChecking, setIsChecking] = useState(true);
-
-    const handleLogin = (user: string) => {
-        localStorage.setItem("user", user);
-        navigate("/");
-    };
-
     useEffect(() => {
-        const user = localStorage.getItem("user");
-        if (user && isChecking) {
-            setIsChecking(false);
-            navigate("/");
-        } else {
-            setIsChecking(false);
-        }
-    }, [navigate, isChecking]);
-
-    if (isChecking) {
-        return null; // Show nothing while checking authentication status
-    }
-
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-            <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-                <h1 className="text-2xl font-bold mb-6 text-center text-gray-800">Bem-vindo ao PM-AL Estudos</h1>
-                <div className="space-y-4">
-                    <button 
-                        onClick={() => handleLogin("JoÃ£o Pedro")} 
-                        className="w-full py-3 px-6 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
-                    >
-                        JoÃ£o Pedro
-                    </button>
-                    <button 
-                        onClick={() => handleLogin("JosÃ© GerÃ´nimo")} 
-                        className="w-full py-3 px-6 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-200 font-medium"
-                    >
-                        JosÃ© GerÃ´nimo
-                    </button>
-                </div>
-            </div>
-        </div>
-    );
-};
-
-export default Login;
         const user = localStorage.getItem("user");
         if (user) {
             navigate("/");

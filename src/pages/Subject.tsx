@@ -18,15 +18,15 @@ const Subject: React.FC = () => {
       id: '1',
       title: 'Apostila Completa',
       type: 'pdf',
-      description: 'Material completo com todo o conteÃºdo da disciplina',
+      description: 'Material completo com todo o conteúdo da disciplina',
       url: '#',
       createdAt: new Date('2024-03-10'),
     },
     {
       id: '2',
-      title: 'Videoaula - IntroduÃ§Ã£o',
+      title: 'Videoaula - Introdução',
       type: 'video',
-      description: 'Aula introdutÃ³ria sobre os conceitos bÃ¡sicos',
+      description: 'Aula introdutória sobre os conceitos básicos',
       url: '#',
       createdAt: new Date('2024-03-11'),
     },
@@ -63,7 +63,7 @@ const Subject: React.FC = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    // Simulando o upload do arquivo e criaÃ§Ã£o de URL
+    // Simulando o upload do arquivo e criação de URL
     const fakeUrl = URL.createObjectURL(formData.file!);
 
     const newContent: ContentSection = {
@@ -77,7 +77,7 @@ const Subject: React.FC = () => {
 
     setContents((prev) => [newContent, ...prev]);
 
-    // Limpar formulÃ¡rio
+    // Limpar formulário
     setFormData({
       title: '',
       type: 'pdf',
@@ -115,13 +115,13 @@ const Subject: React.FC = () => {
         </h1>
         <p className="text-gray-600 dark:text-gray-300">
           Explore o material completo desta disciplina e prepare-se
-          adequadamente para sua aprovaÃ§Ã£o.
+          adequadamente para sua aprovação.
         </p>
       </div>
 
       <div className="mt-12 bg-blue-50 dark:bg-gray-700 rounded-lg p-6 mb-12">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-          Adicionar Novo ConteÃºdo
+          Adicionar Novo Conteúdo
         </h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div>
@@ -129,7 +129,7 @@ const Subject: React.FC = () => {
               htmlFor="title"
               className="block text-sm font-medium text-gray-700 dark:text-gray-300"
             >
-              TÃ­tulo
+              Título
             </label>
             <input
               type="text"
@@ -146,7 +146,7 @@ const Subject: React.FC = () => {
               htmlFor="type"
               className="block text-sm font-medium text-gray-700 dark:text-gray-300"
             >
-              Tipo de ConteÃºdo
+              Tipo de Conteúdo
             </label>
             <select
               id="type"
@@ -157,9 +157,9 @@ const Subject: React.FC = () => {
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
             >
               <option value="pdf">PDF</option>
-              <option value="video">VÃ­deo</option>
+              <option value="video">Vídeo</option>
               <option value="summary">Resumo</option>
-              <option value="exercise">ExercÃ­cios</option>
+              <option value="exercise">Exercícios</option>
             </select>
           </div>
           <div>
@@ -167,7 +167,7 @@ const Subject: React.FC = () => {
               htmlFor="description"
               className="block text-sm font-medium text-gray-700 dark:text-gray-300"
             >
-              DescriÃ§Ã£o
+              Descrição
             </label>
             <textarea
               id="description"
@@ -204,7 +204,7 @@ const Subject: React.FC = () => {
             type="submit"
             className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
-            Enviar ConteÃºdo
+            Enviar Conteúdo
           </button>
         </form>
       </div>
@@ -231,7 +231,7 @@ const Subject: React.FC = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
                   >
-                    Acessar conteÃºdo
+                    Acessar conteúdo
                     <svg
                       className="w-4 h-4 ml-2"
                       fill="none"

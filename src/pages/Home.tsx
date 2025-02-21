@@ -5,15 +5,15 @@ import PerformanceChart from '../components/PerformanceChart';
 
 const Home: React.FC = () => {
   const subjects = [
-    "LÃ­ngua Portuguesa",
-    "NoÃ§Ãµes de InformÃ¡tica",
-    "LegislaÃ§Ã£o Pertinente ao Policial Militar de Alagoas",
-    "MatemÃ¡tica",
-    "CiÃªncias Sociais",
-    "NoÃ§Ãµes de Direito Administrativo",
-    "NoÃ§Ãµes de Direito Constitucional",
-    "NoÃ§Ãµes de Processo Penal",
-    "NoÃ§Ãµes de Direitos Humanos"
+    "Língua Portuguesa",
+    "Noções de Informática",
+    "Legislação Pertinente ao Policial Militar de Alagoas",
+    "Matemática",
+    "Ciências Sociais",
+    "Noções de Direito Administrativo",
+    "Noções de Direito Constitucional",
+    "Noções de Processo Penal",
+    "Noções de Direitos Humanos"
   ];
 
   return (
@@ -21,20 +21,20 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-          Sua aprovaÃ§Ã£o na PM-AL comeÃ§a aqui
+          Sua aprovação na PM-AL começa aqui
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
           Prepare-se de forma eficiente com materiais exclusivos e metodologia comprovada
         </p>
         <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
-          ComeÃ§ar Agora
+          Começar Agora
         </button>
       </div>
 
       {/* Performance Dashboard */}
       <div className="mb-16">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-          AnÃ¡lise de Desempenho
+          Análise de Desempenho
         </h2>
         <PerformanceChart />
       </div>
@@ -52,14 +52,14 @@ const Home: React.FC = () => {
           <Brain className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Simulados Personalizados</h3>
           <p className="text-gray-600 dark:text-gray-300">
-            Monte seus prÃ³prios simulados e acompanhe seu desempenho
+            Monte seus próprios simulados e acompanhe seu desempenho
           </p>
         </div>
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
           <Users className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Comunidade Ativa</h3>
           <p className="text-gray-600 dark:text-gray-300">
-            Interaja com outros candidatos e tire suas dÃºvidas
+            Interaja com outros candidatos e tire suas dúvidas
           </p>
         </div>
       </div>
@@ -67,7 +67,7 @@ const Home: React.FC = () => {
       {/* Subjects Section */}
       <div className="mb-16">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-          Disciplinas DisponÃ­veis
+          Disciplinas Disponíveis
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {subjects.map((subject, index) => (
@@ -92,10 +92,10 @@ const Home: React.FC = () => {
             <Timer className="h-8 w-8 text-blue-600 dark:text-blue-400 flex-shrink-0" />
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                CronÃ´metro Pomodoro
+                Cronômetro Pomodoro
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Otimize seu tempo de estudo com a tÃ©cnica Pomodoro
+                Otimize seu tempo de estudo com a técnica Pomodoro
               </p>
             </div>
           </div>
@@ -103,10 +103,10 @@ const Home: React.FC = () => {
             <BarChart className="h-8 w-8 text-blue-600 dark:text-blue-400 flex-shrink-0" />
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                AnÃ¡lise de Desempenho
+                Análise de Desempenho
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Acompanhe seu progresso com grÃ¡ficos detalhados
+                Acompanhe seu progresso com gráficos detalhados
               </p>
             </div>
           </div>
